@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  tutorio-frontend:
+    image: takemewith-frontend:latest
+    container_name: takemewith-frontend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - takemewith-net
+
